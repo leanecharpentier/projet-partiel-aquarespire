@@ -1,0 +1,178 @@
+.body-produit {
+    background-image: url('../images/poisson.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 35vh;
+}
+
+.titre-produit {
+    color: white;
+    text-align: center;
+    margin-bottom: 25vh;
+}
+
+/* Style présentation du produit */
+
+.box-presentation-produit {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.presentation-produit {
+    width: 80vw;
+    margin: 5vh auto 0;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-masque {
+    width: 35vw;
+}
+
+.prix {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.texte-produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.titre-masque, .texte-masque {
+    color: white;
+}
+
+.bouton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+}
+
+.btn-ajouter-panier {
+    width: fit-content;
+    background-color: white;
+    color: #006e80;
+    text-decoration: none;
+    padding: 2vh 2vw;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+}
+
+.btn-ajouter-panier:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background-color: #006e80 ;
+    color: white;
+}
+
+#icon-coeur-vide, #icon-coeur-plein {
+    display: flex;
+    color: white;
+    font-size: 45px;
+}
+
+#icon-coeur-vide.hidden, #icon-coeur-plein.hidden {
+    display: none;
+}
+
+
+
+/* Style Modal Ajouter au panier */
+
+#modal-ajouter-panier {
+    width: fit-content;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+#modal-ajouter-panier.active {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 4vh 3vw;
+    border-radius: 20px; 
+}
+
+#modal-ajouter-panier form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center
+}
+
+#modal-ajouter-panier select, #btn-valider {
+    padding: 1vh 2vw;
+    background-color: #006e80;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+#modal-ajouter-panier #btn-valider {
+    background-color: #006e80;
+    color: white;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+}
+
+#modal-ajouter-panier button:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+/* Style Naissance Projet */
+
+.naissance-projet {
+    background-color: #006e80;
+    color: white;
+    padding: 5vh 5vw;
+}
+
+.titre-naissance {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.texte-naissance {
+    margin-bottom: 30vh;
+}
+
+/* Style Harry Potter */
+
+.harry-potter {
+    width: 70vw;
+    margin: auto;
+    margin-top: -25vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vh 5vw;
+}
+
+.image-hp {
+    width: 25vw;
+    border-radius: 20px;
+}
+
+.texte-hp {
+    color: white;
+}

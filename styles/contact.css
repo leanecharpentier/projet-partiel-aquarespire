@@ -1,0 +1,110 @@
+.body-contact {
+    background-image: url('../images/ocean_plongeur.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 15vh;
+}
+
+.titre-form {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.form-box {
+    margin: auto;
+    margin-top: 30vh;
+    width: 60vw;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.form-box .box {
+    position: relative;
+}
+
+.form-box .box input,
+.form-box .box select,
+.form-box .box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.form-box .box select option {
+    color: black;
+}
+
+.form-box .box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-box .box label ion-icon {
+    padding-right: 1vw;
+    font-size: 20px
+}
+
+.form-box .box input:focus ~ label,
+.form-box .box input:valid ~ label {
+    top: -25px;
+    left: 0;
+    color: #0197ba ;
+    font-size: 12px;
+}
+
+.form-box .box select ~ label,
+.form-box .box textarea ~ label {
+    top: -25px;
+    left: 0;
+    color: #0197ba ;
+    font-size: 12px;
+}
+
+.btn-submit {
+    padding: 2vh 3vw;
+    margin-left: auto;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    background-color: white;
+    color: #006e80 ;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    transition: all 235ms ease-in-out;
+}
+
+.btn-submit ion-icon {
+    font-size: 20px;
+}
+
+.btn-submit:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background-color: #006e80 ;
+    color: white;
+}
+

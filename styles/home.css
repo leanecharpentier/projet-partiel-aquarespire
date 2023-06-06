@@ -1,0 +1,271 @@
+.body-home {
+    background-image: url('../images/ocean.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 15vh;
+}
+
+/* Style pour la présentation du produit */
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    width: 75vw;
+    margin: 15vh auto;
+}
+
+.presentation-image {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.presentation-image img {
+    width: 30vw;
+}
+
+.presentation-image .ombre-masque {
+    width: 55%;
+    height: 60px;
+    margin: auto;
+    margin-top: -30px;
+    margin-left: 98px;
+    background-color: #00000082;
+    transform: rotate(-10deg);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+.presentation-texte {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-texte h1 {
+    line-height: 6vh;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+
+.presentation-texte p {
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+
+.btn-decouvrir {
+    width: fit-content;
+    border: 2px solid white;
+    background-color: white;
+    color: #006e80;
+    text-decoration: none;
+    padding: 2vh 2vw;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    transition: all .3s ease-in-out;
+}
+
+.btn-decouvrir:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* Style pour le bloc de texte */
+
+.bloc-texte {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5vh 0;
+    text-align: justify;
+}
+
+.bloc-texte p {
+    width: 80vw;
+    margin: 5vh auto;
+    color: white;
+}
+
+/* Style bloc d'images */
+
+.bloc-image {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    justify-content:center;
+    padding: 10vh 0;
+}
+
+.bloc-image img {
+    width: 25vw;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #00000090;
+}
+
+/* Style pour le carousel de témoignage */
+
+.carousel {
+    width: 100%;
+    height: 80vh;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #006e80;
+    color: white;
+}
+
+.carousel-h2, .carousel-h3 {
+    text-align: center;
+}
+
+.carousel-h2 {
+    margin-top: 5vh;
+}
+
+.carousel-h3 {
+    font-weight: 400;
+}
+  
+.carousel:hover .controls {
+    opacity: 1;
+}
+  
+.controls {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+}
+
+.control {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: .5;
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+  
+.slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+    margin-top: 5vh;
+}
+
+.slide {
+    min-width: 80%;
+    min-height: 200px;
+    height: auto;
+    padding: 3%;
+    margin: 0 7%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+
+/* Style pour le formulaire Newsletter */
+
+.bloc-newsletter {
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    padding: 10vh 0;
+    margin-top: 10vh;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black
+}
+
+.bloc-newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
+    margin: auto;
+}
+
+.bloc-newsletter form label {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.bloc-newsletter .div-form-newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 2vh;
+}
+
+.bloc-newsletter .div-form-newsletter input {
+    background-color: #006e80;
+    padding: 2vh 1vw;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    flex:1;
+}
+
+.bloc-newsletter .div-form-newsletter input::placeholder {
+    color:white;
+}
+
+.bloc-newsletter .div-form-newsletter button {
+    background-color: #006e80;
+    padding: 2vh 2vw;
+    border: 1px solid #006e80;
+    border-radius: 50px;
+    color:white;
+    transition: all .3s ease-in-out
+    
+}
+
+.bloc-newsletter .div-form-newsletter button:hover {
+    background-color: white;
+    color: #006e80;
+}
+
+.bloc-newsletter .erreur-mail {
+    margin: auto;
+    margin-bottom: 4vh;
+    width: 80%;
+    background-color: rgba(255, 0, 0, 0.6);
+    padding: 1vh 2vw;
+    border-radius: 30px;
+}
+
+
+.bloc-newsletter .valid-mail {
+    margin: auto;
+    margin-bottom: 4vh;
+    width: 80%;
+    background-color: rgba(0, 128, 0, 0.6);
+    padding: 1vh 2vw;
+    border-radius: 30px;
+}
